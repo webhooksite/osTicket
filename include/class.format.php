@@ -357,7 +357,7 @@ class Format {
     function sanitize($text, $striptags=false, $spec=false) {
 
         //balance and neutralize unsafe tags.
-        $text = Format::safe_html($text, array('spec' => $spec));
+        $text = Format::safe_html($text, array('spec' => $spec, 'decode' => false));
 
         $text = self::localizeInlineImages($text);
 

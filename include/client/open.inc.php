@@ -8,7 +8,6 @@ if($thisclient && $thisclient->isValid()) {
 }
 
 $info=($_POST && $errors)?Format::htmlchars($_POST):$info;
-
 $form = null;
 if (!$info['topicId']) {
     if (array_key_exists('topicId',$_GET) && preg_match('/^\d+$/',$_GET['topicId']) && Topic::lookup($_GET['topicId']))
@@ -40,7 +39,7 @@ if ($info['topicId'] && ($topic=Topic::lookup($info['topicId']))) {
     <tbody>
 <?php
         if (!$thisclient) {
-            $uform = UserForm::getUserForm()->getForm($_POST);
+            $uform = UserForm::getUserForm()->getForm(['email' => $_GET['email'] ?? '', 'name' => $_GET['name'] ?? ''] + $_POST);
             if ($_POST) $uform->isValid();
             $uform->render(array('staff' => false, 'mode' => 'create'));
         }

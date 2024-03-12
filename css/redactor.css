@@ -441,7 +441,7 @@
 .redactor-toolbar,
 .redactor-air {
   z-index: 100;
-  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family:  "Helvetica Neue", Helvetica, Tahoma, sans-serif;
   position: relative;
   margin: 0 !important;
   padding: 0;
@@ -633,7 +633,7 @@
   border-right: none; }
 
 .redactor-dropdown {
-  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family:  "Helvetica Neue", Helvetica, Tahoma, sans-serif;
   display: none;
   position: absolute;
   z-index: 1051;
@@ -743,7 +743,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1051;
-  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family:  "Helvetica Neue", Helvetica, Tahoma, sans-serif;
   line-height: 24px; }
 
 .redactor-modal {
@@ -1043,7 +1043,7 @@
   margin: 0;
   padding: 16px 18px;
   color: #333;
-  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family:  "Helvetica Neue", Helvetica, Tahoma, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   box-sizing: border-box; }

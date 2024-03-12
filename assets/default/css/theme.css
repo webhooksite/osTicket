@@ -593,7 +593,7 @@ body {
   display: block;
 }
 label.required, span.required {
-  font-weight: bold;
+  /* font-weight: bold;*/
 }
 #ticketForm div label.required,
 #clientLogin div label.required {
